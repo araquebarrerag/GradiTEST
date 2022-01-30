@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <title>GradiTEST</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s6 m6 l6">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="col s12">
+                    <div style="position: relative;">
+                        <div id="hiveDiv1" class="class3">
+                            <div class="carousel carousel-slider center">
+                                <img src="https://i.ibb.co/cC4XrmP/1.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/xmnS3Bb/2.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/g4nT5ds/3.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/nfbMsM2/4.jpg" class="responsive-img carousel-item">
+                            </div>
+                        </div>
+                        <div id="hiveDiv2" class="class3">
+                            <div class="carousel carousel-slider center">
+                                <img src="https://i.ibb.co/ZKcfS17/1-1.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/689BmkL/1-2.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/N7MGFDf/1-3.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/VHYQ3my/1-4.jpg" class="responsive-img carousel-item">
+                            </div>
+                        </div>
+                        <div id="hiveDiv3" class="class3">
+                            <div class="carousel carousel-slider center">
+                                <img src="https://i.ibb.co/TmDQrKs/2-1.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/6WcN5Dw/2-2.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/HpHCbRy/2-3.jpg" class="responsive-img carousel-item">
+                                <img src="https://i.ibb.co/0cGBs2Z/2-4.jpg" class="responsive-img carousel-item">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col s6 m6 l6">
+                <div class="col s12">
+                    <h6 class="titulo1">Zapatillas Nike</h6>
+                    <h4><strong>Mercurial superfly 7</strong></h4>
+                    <h5><strong>$250.000</strong> <del>$300.000</del></h5>
+                    <br>
+                    <hr size="2px" color="gray" style="margin-right: 20px;" />
+                </div>
+                <div class="col s12">
+                    <br>
+                    <form action="#" class="formulario">
+                        <p>
+                            <span>Color: </span>
+                            <label>
+                                <a class="btn-floating btn-small waves-effect waves-light red radio"
+                                    onclick="guardarColor(1)"></a>
+                            </label>
+                            <label>
+                                <a class="btn-floating btn-small waves-effect waves-light yellow radio"
+                                    onclick="guardarColor(2)"></a>
+                            </label>
+
+                            <label>
+                                <a class="btn-floating btn-small waves-effect waves-light white radio"
+                                    onclick="guardarColor(3)"></a>
+                            </label>
+
+                            <label>
+                            </label>
+                        </p>
+                    </form>
+                    <br>
+                    <hr size="2px" color="gray" style="margin-right: 20px;" />
+                </div>
+                <div class="col s12">
+                    <br>
+                    <span>Size: </span>
+                    <a class="waves-effect waves-light btnd white boton-size-1" onclick="guardarSize(7)">7</a>
+                    <a class="waves-effect waves-light btnd white boton-size-2" onclick="guardarSize(7.5)">7.5</a>
+                    <a class="waves-effect waves-light btnd white boton-size-1" onclick="guardarSize(8)">8</a>
+                    <a class="waves-effect waves-light btnd white boton-size-2" onclick="guardarSize(8.5)">8.5</a>
+                    <a class="waves-effect waves-light btnd white boton-size-1" onclick="guardarSize(9)">9</a>
+                    <a class="waves-effect waves-light btnd white boton-size-2" onclick="guardarSize(9.5)">9.5</a>
+                    <a class="waves-effect waves-light btnd white boton-size-1" onclick="guardarSize(10)">10</a>
+                    <a class="waves-effect waves-light btnd white boton-size-2" onclick="guardarSize(10.5)">10.5</a>
+                    <a class="waves-effect waves-light btnd white boton-size-1" onclick="guardarSize(11)">11</a>
+                    <a class="waves-effect waves-light btnd white boton-size-2" onclick="guardarSize(11.5)">11.5</a>
+                    <br>
+                    <br>
+                    <hr size="2px" color="gray" style="margin-right: 20px;" />
+                </div>
+                <div class="col s12">
+                    <br>
+                    <div class="col s2" class="cant">
+                        <input type="number" min="1" max="3" step="1" value="1" class="input" id="cantidad"
+                            onclick="guardarTotal()">
+                    </div>
+                    <div class="col s7">
+
+                    </div>
+                    <div class="col s3" style="padding-top: 7px;">
+                        Valor:
+                        <input id="total" type="text" value="$250.000" disabled>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="col s12 m12 l12">
+                    <br>
+                    <div class="col s12 m6 l6">
+                        <a class="waves-effect waves-light btn-large white" style="color: black;"
+                            onclick="proximamente()">Agregar a favorito</a>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <a class="waves-effect waves-light btn-large black" onclick="guardar()">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="col s12 m12 l12">
+                    <p>Zapatilla usada para jugar en corta hierba de fibra sintetica (Alfombra de primera generacion AG)
+                        Las orejetas bajas combinadas con el compuesto base de goma crean una mayor friccion para
+                        proporcionar una traccion optima para movimientos multidireccionales. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
